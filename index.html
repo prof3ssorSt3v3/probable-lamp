@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global inert property and attribute</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" type="module"></script>
+  </head>
+  <body>
+    <div class="drawer" inert>
+      <h2>Drawer Heading</h2>
+      <nav>
+        <a href="#">Link One</a><br />
+        <a href="#">Link Two</a><br />
+        <a href="#">Link Three</a><br />
+      </nav>
+    </div>
+    <main>
+      <p><button id="openBtn" tabindex="5">Show Dialog</button></p>
+      <ul>
+        <li><a href="#" tabindex="4">One</a></li>
+        <li><a href="#" tabindex="3">Two</a></li>
+        <li><a href="#" tabindex="2">Three</a></li>
+        <li><a href="#" tabindex="1">Four</a></li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam odio laudantium aspernatur minus tenetur dolorum hic suscipit provident amet nam. Deserunt voluptatibus laborum accusantium
+        eaque repellendus deleniti quaerat, saepe accusamus?
+      </p>
+      <p>
+        Inert is a global attribute and property for all HTML elements. Explicabo rerum necessitatibus perferendis? Facilis, alias commodi, veniam voluptas harum fuga accusantium quas amet voluptates
+        recusandae excepturi. Magni voluptates corrupti rerum? Totam quia est ratione doloremque fugit alias provident? Consequuntur!
+      </p>
+
+      <form>
+        <p><input tabindex="8" type="text" id="fullname" name="fullname" placeholder="your name" /></p>
+        <p><input tabindex="7" type="email" id="email" name="email" placeholder="your email address" /></p>
+        <p><input tabindex="6" type="submit" value="Send" /></p>
+      </form>
+    </main>
+    <dialog id="d">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nulla. Iusto voluptatum eos cumque dolorem perspiciatis porro exercitationem laboriosam, labore dolores enim tempora, possimus
+        accusamus quibusdam, totam ipsa quisquam maiores.
+      </p>
+      <p><button id="closeBtn">close dialog</button></p>
+    </dialog>
+  </body>
+</html>
